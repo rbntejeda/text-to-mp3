@@ -5,7 +5,7 @@ const papaparse = require('papaparse')
 
 const client = new textToSpeech.TextToSpeechClient();
 const inputFileName = './assets/data.csv';
-const outputDir = './assets'
+const outputDir = './assets/neutral'
 
 const app = async () => {
     var csvText = fs.readFileSync(inputFileName, { encoding: "UTF8" });
@@ -20,11 +20,12 @@ const RequestTexToMp3 = async (data) => {
             text: data.text
         },
         voice: {
-            languageCode: data.lang,
-            ssmlGender: data.gender
+            languageCode: "es-ES",
+            name: "es-ES-Standard-A"
         },
         audioConfig: {
-            audioEncoding: 'MP3'
+            audioEncoding: 'MP3',
+            speakingRate: 0.90
         },
     };
     const [response] = await client.synthesizeSpeech(request);
