@@ -1,0 +1,28 @@
+{
+  "name": "text-to-mp3",
+  "version": "0.0.1",
+  "description": "transforma csv a mp3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbntejeda/text-to-mp3.git"
+  },
+  "keywords": [
+    "google-cloud-text-to-speech"
+  ],
+  "author": "Ruben Eduardo Tejeda Roa",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rbntejeda/text-to-mp3/issues"
+  },
+  "homepage": "https://github.com/rbntejeda/text-to-mp3#readme",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^2.3.0",
+    "lodash": "^4.17.15",
+    "papaparse": "^5.2.0"
+  }
+}
