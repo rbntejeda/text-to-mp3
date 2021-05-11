@@ -22,7 +22,7 @@
   "homepage": "https://github.com/rbntejeda/text-to-mp3#readme",
   "dependencies": {
     "@google-cloud/text-to-speech": "^2.3.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "papaparse": "^5.2.0"
   }
 }
